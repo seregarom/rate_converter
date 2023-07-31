@@ -7,7 +7,10 @@ body {
   --section-border: lightgray;
   --increase-color: green;
   --decrease-color: red;
-  margin-left: calc(100vw - 100%);
+
+  @media screen and (min-width: 1313px) {
+    margin-left: calc(100vw - 100%);
+  }
 }
 
 #app {

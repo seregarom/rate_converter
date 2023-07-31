@@ -1,5 +1,5 @@
 <script setup>
-  defineProps({
+  const props = defineProps({
     type: {
       type: String,
       default: 'text',
@@ -22,6 +22,13 @@
       return ['string', 'number'].includes(typeof value);
     },
   });
+
+  const normalizeValue = (value) => {
+    if (props.type === 'number') {
+      return +value;
+    }
+    return value;
+  };
 </script>
 
 <template>
@@ -29,7 +36,7 @@
     :type="type"
     :value="modelValue"
     :disabled="disabled"
-    @input="emit('update:modelValue', $event.target.value)"
+    @input="emit('update:modelValue', normalizeValue($event.target.value))"
   />
 </template>
 
