@@ -9,7 +9,7 @@
 
   const list = useList();
   const { filteredRates, filterPattern } = storeToRefs(list);
-  const { swichDirection } = list;
+  const { switchDirection } = list;
 </script>
 
 <template>
@@ -18,7 +18,7 @@
       <div class="filter">Фильтр: <VInput v-model="filterPattern" /></div>
       <VButton
         text="◀▶"
-        @click="swichDirection"
+        @click="switchDirection"
       />
     </div>
     <VListCards :rates="filteredRates" />

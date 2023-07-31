@@ -33,7 +33,7 @@ export const useList = defineStore('list', () => {
   );
 
   const isReverseDirection = ref(false);
-  const swichDirection = () => {
+  const switchDirection = () => {
     isReverseDirection.value = !isReverseDirection.value;
   };
 
@@ -48,7 +48,7 @@ export const useList = defineStore('list', () => {
 
   return {
     filterPattern,
-    swichDirection,
+    switchDirection,
     filteredRates,
   };
 });
