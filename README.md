@@ -1,4 +1,4 @@
-# rate_coverter
+# rate_converter
 
 ## Project setup
 ```
