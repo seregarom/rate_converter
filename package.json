@@ -1,5 +1,5 @@
 {
-  "name": "currency_coverter",
+  "name": "rate_coverter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
