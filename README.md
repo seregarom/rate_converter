@@ -1,4 +1,4 @@
-# currency_coverter
+# rate_coverter
 
 ## Project setup
 ```
