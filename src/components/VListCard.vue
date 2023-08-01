@@ -1,7 +1,7 @@
 <script setup>
   import { shortenString } from '@/utils';
 
-  const props = defineProps({
+  defineProps({
     nominal: {
       type: Number,
       required: true,
@@ -32,7 +32,9 @@
 <template>
   <div class="card">
     <p class="title">{{ nominalTicker }} - {{ valueTicker }}</p>
-    <p class="name">{{ shortenString(title) }}</p>
+    <p class="name">
+      {{ shortenString(title) }}
+    </p>
     <p class="value">
       {{ nominal }} {{ nominalTicker }} - <span>{{ value }}</span>
       {{ valueTicker }}

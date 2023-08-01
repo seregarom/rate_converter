@@ -1,5 +1,5 @@
 <script setup>
-  const props = defineProps({
+  defineProps({
     titles: {
       type: Array,
       required: true,

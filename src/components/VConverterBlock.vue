@@ -39,7 +39,9 @@
 
 <template>
   <div class="block">
-    <div class="title">{{ shortenString(tickers[ticker].title) }}</div>
+    <div class="title">
+      {{ shortenString(tickers[ticker].title) }}
+    </div>
     <VInput
       type="number"
       :disabled="disabled"

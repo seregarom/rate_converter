@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 
-import { api } from '@/services/api';
+import { api } from '@/api';
 
-import VList from '@/components/VList';
-import VConverter from '@/components/VConverter';
+import VList from '@/components/VList.vue';
+import VConverter from '@/components/VConverter.vue';
 
 export const useApp = defineStore('app', () => {
   const tabs = [

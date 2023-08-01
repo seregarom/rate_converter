@@ -1,7 +1,6 @@
 <script setup>
   import { storeToRefs } from 'pinia';
-
-  import VTabs from './components/VTabs';
+  import VTabs from './components/VTabs.vue';
   import { useApp } from './stores/app';
 
   const app = useApp();

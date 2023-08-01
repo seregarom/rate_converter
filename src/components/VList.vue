@@ -1,8 +1,6 @@
 <script setup>
   import { storeToRefs } from 'pinia';
-
   import { useList } from '@/stores/list';
-
   import VListCards from './VListCards.vue';
   import VButton from './VButton.vue';
   import VInput from './VInput.vue';

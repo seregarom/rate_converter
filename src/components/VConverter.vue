@@ -1,6 +1,5 @@
 <script setup>
   import { storeToRefs } from 'pinia';
-
   import VConverterBlock from './VConverterBlock.vue';
   import VButton from './VButton.vue';
   import { useConverter } from '@/stores/converter';
